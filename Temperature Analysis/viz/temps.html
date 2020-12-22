@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Latitude vs. Max Temperatures</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/flatly/bootstrap.min.css" integrity="sha384-H4X+4tKc7b8s4GoMrylmy2ssQYpDHoqzPa9aKXbDwPoPUA3Ra8PA5dGzijN+ePnH" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- JS for Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-nav">
+        <a class="navbar-brand" href="../index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots
+              </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="temps.html">Max Temperature</a>
+                        <a class="dropdown-item" href="humids.html">Humidity</a>
+                        <a class="dropdown-item" href="clouds.html">Cloudiness</a>
+                        <a class="dropdown-item" href="winds.html">Wind Speed</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../comparisons.html">Comparisons</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../data.html">Data</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row" style="margin-top:5%">
+            <div class="col-md-8">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1> Latitude vs Max Temperature</h1>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src="../assets/cityLatvMaxTemp.png" class="img-fluid">
+                            <p><strong>Hypothesis:</strong> As you approach the equator (0° Latitude) temperature will increase.</p>
+
+                            <p>As expected from the hypothesis, the Latitude vs. Temperature graph above highlights the trend that “as you approach the equator, temperature increases.”</p>
+
+                            <p>To break it down further, all data points &lt; 0° Latitude are considered as cities the Southern Hemisphere. All data points &gt; 0° Latitude are considered as cities in the Northern Hemisphere. Max temperatures were calculated
+                                on November 8, 2020 which is considered the “winter season” for Northern Hemisphere cities, and conversely; the “summer season” for Southern Hemisphere cities. This is likely why temperatures &lt; 0° Latitude were higher
+                                on average compared to temperatures &gt; 0° Latitude.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1> Visualizations</h1>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="clouds.html">
+                                <img src="../assets/cityLatvCloud.png" style="width: 100%"></a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="humids.html">
+                                <img src="../assets/cityLatvHumid.png" style="width: 100%;"></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="temps.html">
+                                <img src="../assets/cityLatvMaxTemp.png" style="border: 5px solid #e74c3c; width: 100%"></a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="winds.html">
+                                <img src="../assets/cityLatvWind.png " style="width: 100%;"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
